@@ -1,0 +1,131 @@
+.myButton {
+    width: 134px;
+    height: 54px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: none;
+    background-color: #14245E;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    font-family: 'Monsterrat';
+    transition: background-color 1s ease-out;
+}
+
+/* size big */
+.big {
+    width: 218px;
+    height: 72px;
+    padding: 24px 48px;
+    border-radius: 3px;
+    font-family: 'Monsterrat';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* color orange */
+.orange {
+    background-color: #E87403;
+}
+
+.orange:hover {
+    background-color: #FFB746;
+}
+
+.orange:focus {
+    background-color: #E87403;
+}
+
+.orange:active {
+    background-color: #E87403;
+}
+
+/* empty */
+
+.empty {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: color .5s ease-out, border .5s ease-out, background-color 1s ease-out;
+    border: 1px solid #000000;
+}
+
+.empty:disabled {
+    border-color: #A9B3D5;
+    color: #A9B3D5;
+}
+
+.empty:hover {
+    color: #FFFFFF;
+    border: none;
+}
+
+.empty:focus {
+    color: #FFFFFF;
+    border: none;
+}
+
+.empty:active {
+    color: #FFFFFF;
+    border: none;
+}
+
+.myButton:disabled {
+    background-color: #A9B3D5;
+    border: none;
+}
+
+.myButton:hover {
+    background-color: #283872;
+    border: none;
+}
+
+.myButton:focus {
+    background-color: #14245E;
+    border: none;
+}
+
+.myButton:active {
+    background-color: #14245E;
+    border: none;
+}
+
+.shadow {
+    box-shadow: 10px 10px #000000;
+    background-color: #14245E;
+    color: #FFFFFF;
+    background-image: url(../../img/arrow-right.svg);
+    background-position: 84% 61%;
+    background-repeat: no-repeat;
+    transition: box-shadow .2s ease-out, background-position .3s ease-out;
+}
+
+.shadow:disabled {
+    box-shadow: 10px 10px #283872;
+    background-color: #A9B3D5;
+    border: none;
+}
+
+.shadow:hover {
+    background-color: #283872;
+    border: none;
+    box-shadow: 10px 10px #0c163a;
+    background-position: 90% 61%;
+}
+
+.shadow:focus {
+    background-color: #14245E;
+    border: none;
+    box-shadow: 10px 10px #000000;
+    background-position: 84% 61%;
+}
+
+.shadow:active {
+    background-color: #14245E;
+    border: none;
+    box-shadow: 10px 10px #000000;
+    background-position: 90% 61%;
+}
+
