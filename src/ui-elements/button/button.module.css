@@ -1,13 +1,13 @@
 .myButton {
-    width: 134px;
-    height: 54px;
+    width: 124px;
+    height: 40px;
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 10px 26px;
     border: none;
     background-color: #14245E;
     color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 20px;
     cursor: pointer;
     font-family: 'Monsterrat';
@@ -16,31 +16,14 @@
 
 /* size big */
 .big {
-    width: 218px;
-    height: 72px;
-    padding: 24px 48px;
+    width: 220px;
+    height: 40px;
+    padding: 14px 30px;
     border-radius: 3px;
     font-family: 'Monsterrat';
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
-}
-
-/* color orange */
-.orange {
-    background-color: #E87403;
-}
-
-.orange:hover {
-    background-color: #FFB746;
-}
-
-.orange:focus {
-    background-color: #E87403;
-}
-
-.orange:active {
-    background-color: #E87403;
+    line-height: normal;
 }
 
 /* empty */
@@ -92,6 +75,28 @@
     border: none;
 }
 
+.empty:checked {
+    background-color: #14245E;
+    border: none;
+}
+
+/* color orange */
+.orange {
+    background-color: #E87403;
+}
+
+.orange:hover {
+    background-color: #FFB746;
+}
+
+.orange:focus {
+    background-color: #E87403;
+}
+
+.orange:active {
+    background-color: #E87403;
+}
+
 .shadow {
     box-shadow: 10px 10px #000000;
     background-color: #14245E;
@@ -129,3 +134,7 @@
     background-position: 90% 61%;
 }
 
+.active {
+    background-color: #14245E;
+    color: #FFFFFF;
+}
