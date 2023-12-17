@@ -30,6 +30,11 @@
     font-weight: 400;
     line-height: normal;
     margin-right: 1px;
+    cursor: pointer;
+}
+
+.theme:hover {
+    background-color: #283872;
 }
 
 .checked {
