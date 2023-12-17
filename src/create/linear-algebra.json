@@ -1,0 +1,174 @@
+{
+    "name": "Themes",
+    "type": "theme",
+    "themes": [
+        {
+            "title": "Матрицы",
+            "complexity": [
+                {
+                    "easy": "0-3",
+                    "medium": "4",
+                    "hard": "5"
+                }
+            ],
+            "english_name": "matrix", 
+            "isVisible": false
+        },
+        {
+            "title": "Определители",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "1"
+                }
+            ],
+            "english_name": "determinant", 
+            "isVisible": false
+        },
+        {
+            "title": "Обратная матрица",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "1"
+                }
+            ],
+            "english_name": "inbertible_matrix", 
+            "isVisible": false
+        },
+        {
+            "title": "Ранг",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "rank", 
+            "isVisible": false
+        },
+        {
+            "title": "Матричные уравнения",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "1"
+                }
+            ],
+            "english_name": "matrix_equation", 
+            "isVisible": false
+        },
+        {
+            "title": "Системы линейниых уравнений",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "linear_equation_system", 
+            "isVisible": false
+        },
+        {
+            "title": "Метод матричного исчисления",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "matrix_method", 
+            "isVisible": false
+        },
+        {
+            "title": "Формулы Крамера",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "cramer", 
+            "isVisible": false
+        },
+        {
+            "title": "Метод Гаусса",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "gaussian", 
+            "isVisible": false
+        },
+        {
+            "title": "Скалярное, векторное, смешанное произведение векторов",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "vector_multiplication", 
+            "isVisible": false
+        },
+        {
+            "title": "Прямая на плоскости",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "line_in_plane", 
+            "isVisible": false
+        },
+        {
+            "title": "Прямая и плоскость в пространстве",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "line_plane_space", 
+            "isVisible": false
+        },
+        {
+            "title": "Кривые второго порядка",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "conic_section", 
+            "isVisible": false
+        },
+        {
+            "title": "Поверхности второго порядка",
+            "complexity": [
+                {
+                    "easy": "0",
+                    "medium": "0",
+                    "hard": "0"
+                }
+            ],
+            "english_name": "second_surface", 
+            "isVisible": false
+        }
+    ]
+}
