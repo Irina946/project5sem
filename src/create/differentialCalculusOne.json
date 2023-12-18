@@ -11,8 +11,10 @@
                     "hard": "5"
                 }
             ],
-            "english_name": "derivative", 
-            "isVisible": false
+            "english_name": "derivative",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Дифференциал функции",
@@ -23,8 +25,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "differential", 
-            "isVisible": false
+            "english_name": "differential",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Правила дифференцирования",
@@ -35,8 +39,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "derivation_rule", 
-            "isVisible": false
+            "english_name": "derivation_rule",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Производные высших порядков",
@@ -47,8 +53,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "high_derivative", 
-            "isVisible": false
+            "english_name": "high_derivative",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Правило Лопиталя",
@@ -59,8 +67,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "lopital_rule", 
-            "isVisible": false
+            "english_name": "lopital_rule",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Экстремум функции",
@@ -71,8 +81,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "extremum", 
-            "isVisible": false
+            "english_name": "extremum",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Выпуклость, вогнутость",
@@ -83,8 +95,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "convex_function", 
-            "isVisible": false
+            "english_name": "convex_function",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Асимптоты",
@@ -95,8 +109,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "asymptote", 
-            "isVisible": false
+            "english_name": "asymptote",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Применение производной для исследования функций",
@@ -107,8 +123,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "function_solving", 
-            "isVisible": false
+            "english_name": "function_solving",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Формула Тейлора",
@@ -119,8 +137,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "taylor", 
-            "isVisible": false
+            "english_name": "taylor",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         }
     ]
 }
