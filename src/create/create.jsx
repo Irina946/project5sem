@@ -7,7 +7,8 @@ import differentialCalculusOne from "./differentialCalculusOne.json"
 import differentialCalculusSeveral from "./differentialCalculusSeveral.json"
 import Button from "../ui-elements/button/button";
 import clsx from "clsx";
-import { sendTasks } from "./transport";
+import { sendTasks, getSendTasksRequestModel } from "./transport";
+import { Link } from "react-router-dom";
 
 
 function getRandomComplexity(min, max) {
@@ -25,7 +26,7 @@ const ButtonClick = (props) => {
 
     }
 
-    
+
 
     const complexity = props.complexity;
     const easyNumber = getRandomComplexity(Number(complexity[0].easy[0]), Number(complexity[0].easy.at(-1)));
@@ -38,16 +39,19 @@ const ButtonClick = (props) => {
                 title='Низкий'
                 click={() => handleClick(props.id + 0, easyNumber)}
                 active={selectedButtonId === (props.id + 0) ? 'active' : ''}
+                color="empty"
             />
             <Button
                 title='Средний'
                 click={() => handleClick(props.id + 1, mediumNumber)}
                 active={selectedButtonId === (props.id + 1) ? 'active' : ''}
+                color="empty"
             />
             <Button
                 title='Высокий'
                 click={() => handleClick(props.id + 2, hardNumber)}
                 active={selectedButtonId === (props.id + 2) ? 'active' : ''}
+                color="empty"
             />
         </div>
     );
@@ -87,18 +91,16 @@ function LeftDiv() {
         setCheck(checkChange)
     }
 
-    
+
 
     const handleChangeCount = (idx, count) => {
-        console.log(idx, count)
         const checkChange = { ...check };
-        checkChange.themes[idx].count =  count;
+        checkChange.themes[idx].count = count;
         setCheck(checkChange)
     }
 
     const handleClickComplexity = (idx, complexity) => {
         const checkChange = { ...check };
-        console.log( checkChange.themes[idx]); 
         checkChange.themes[idx].selectedComplexity = complexity;
         setCheck(checkChange)
     }
@@ -106,6 +108,27 @@ function LeftDiv() {
     useEffect(() => {
         setCheck(TaskData)
     }, [TaskData])
+
+    const [generating, setGenerating] = useState(false)
+
+    const two = () => sendTasks(check)
+
+    const handleButtonGeneratingClick = () => {
+        setGenerating(true);
+        two();
+    }
+
+    const handleButtonDownloadClick = (data) => {
+        const blob = new Blob([data], { type: 'application/json' });
+
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.setAttribute("href", url);
+        link.setAttribute("download", "Запрос.json")
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
 
     return (<><div className={styles.leftDiv}>
@@ -117,7 +140,7 @@ function LeftDiv() {
     </div>
         <div className={styles.centerDiv}>
             {check.themes.map((theme, idx) => (
-                <div className={styles.checkboxContainer}>
+                <div key={idx} className={styles.checkboxContainer}>
                     <input
                         id={idx}
                         type="checkbox"
@@ -132,32 +155,50 @@ function LeftDiv() {
         </div>
         <div className={styles.rightDiv}>
             {check.themes.map((div, idx) => (
-                !div.isVisible ? <></> :
-                <div className={styles.oneTheme} id={idx + 100}>{div.title}
-                    <div className={styles.parameters}>Выберите начальный уровень сложности</div>
-                    <ButtonClick
-                        id={idx + 1000}
-                        complexity={div.complexity}
-                        onChangeComplexity={(complexity) => handleClickComplexity(idx, complexity)}
-                    />
-                    <div className={styles.parameters}>Введите количество задач</div>
-                    <input
-                        className={styles.numberInput}
-                        type="number"
-                        value={div.count}
-                        onChange={(e) => handleChangeCount(idx, e.target.value)}
+                !div.isVisible ? <div key={idx}></div> :
+                    <div key={idx} className={styles.oneTheme} id={idx + 100}>{div.title}
+                        <div className={styles.parameters}>Выберите начальный уровень сложности</div>
+                        <ButtonClick
+                            id={idx + 1000}
+                            complexity={div.complexity}
+                            onChangeComplexity={(complexity) => handleClickComplexity(idx, complexity)}
+                        />
+                        <div className={styles.parameters}>Введите количество задач</div>
+                        <input
+                            className={styles.numberInput}
+                            type="number"
+                            value={div.count}
+                            onChange={(e) => handleChangeCount(idx, e.target.value)}
+                        />
+                    </div>
+            ))}
+            <div className={styles.buttonContainer}>
+                <div className={generating ? styles.hidden : ''}>
+                    <Button
+                        color="orange"
+                        size="big"
+                        title="Начать генерацию"
+                        shadow=''
+                        click = {() => handleButtonGeneratingClick()}
                     />
                 </div>
-            ))}
+                <Link to='viewing' className={generating ? '' : styles.hidden}>
+                    <Button
+                        color="orange"
+                        size="big"
+                        shadow=''
+                        title="Перейти к просмотру"
+                    />
+                </Link>
+                <Button
+                    size='big'
+                    title='Скачать файл'
+                    shadow=''
+                    disabled={!generating}
+                    click={() => handleButtonDownloadClick(getSendTasksRequestModel(check))} />
+            </div>
         </div>
-        <div className={styles.buttonContainer}>
-            <Button
-                color="orange"
-                size="big"
-                title="Начать генерацию"
-                click = {() => sendTasks(check)}
-            />
-        </div></>)
+    </>)
 }
 
 
