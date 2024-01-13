@@ -1,7 +1,9 @@
 import styles from "./printModel.module.css";
 
 
+
 export function GenerateMatrix(props) {
+
     const data = props.data
     return (
         <div>

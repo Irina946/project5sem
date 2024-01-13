@@ -33,6 +33,15 @@
     cursor: pointer;
 }
 
+.theme:disabled {
+    cursor: not-allowed;
+}
+
+.theme:disabled:hover {
+    cursor: not-allowed;
+    background-color: #14245E;
+}
+
 .theme:hover {
     background-color: #283872;
 }

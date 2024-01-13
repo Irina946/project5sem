@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./viewing.module.css";
-import Data from "./response_1703162538519.json"
 import {
     PrintTask,
     GenerateMatrix,
@@ -12,20 +11,8 @@ import {
     PrintVector
 } from "./printModel";
 import Button from "../ui-elements/button/button";
-import { Link } from "react-router-dom";
-
-
-async function getTasks() {
-    const response = await fetch('https://math-generator-7450.onrender.com/tasks', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    });
-    console.log(await response.json());
-    return response;
-    
-}
+import { Link, useLocation } from "react-router-dom";
+import { getTasksXML } from "../create/transport";
 
 
 const checkContainsWord = (word, string) => {
@@ -174,13 +161,25 @@ const ChoosingPrintModel = (props) => {
 }
 
 const Viewing = () => {
-    useEffect(() => {getTasks()}, [])
+    const handleButtonDownloadClick = (data) => {
+        const blob = new Blob([data], { type: 'application/xml' });
+
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.setAttribute("href", url);
+        link.setAttribute("download", "Задачи.XML")
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    let { state } = useLocation();
+    console.log(state)
     return (<div>
         <div className={styles.header}></div>
         <div className={styles.main}>
             <div className={styles.download}></div>
             <div className={styles.tasks}>
-                {Data.map((item, index) => (
+                {state.map((item, index) => (
 
                     <ChoosingPrintModel key={index} number={index + 1} task={item} />
                 ))}
@@ -193,7 +192,14 @@ const Viewing = () => {
                         color="orange"
                     />
                 </Link>
-                <button className={styles.myButton}>Экспорт в Moodle XML</button>
+                {/* <Link to="https://math-generator-7450.onrender.com/convert"> */}
+                    <button
+                        className={styles.myButton}
+                        onClick={async () => handleButtonDownloadClick(await getTasksXML())}
+                    >
+                        Экспорт в Moodle XML
+                    </button>
+                {/* </Link> */}
             </div>
         </div>
     </div>

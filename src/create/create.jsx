@@ -109,13 +109,14 @@ function LeftDiv() {
         setCheck(TaskData)
     }, [TaskData])
 
-    const [generating, setGenerating] = useState(false)
+    const [generating, setGenerating] = useState(false);
+    const [dataTasks, setDataTasks] = useState();
 
-    const two = () => sendTasks(check)
+    const changeButton = async () => setDataTasks(await sendTasks(check))
 
     const handleButtonGeneratingClick = () => {
         setGenerating(true);
-        two();
+        changeButton();
     }
 
     const handleButtonDownloadClick = (data) => {
@@ -132,11 +133,38 @@ function LeftDiv() {
 
 
     return (<><div className={styles.leftDiv}>
-        <img src={ImgLogo} alt='логотип' className={styles.logo} width="225" height="29"></img>
-        <button id="button1" className={clsx(styles.theme, button1)} onClick={() => handleButtonClick("button1")}>Элементы линейной алгебры и аналитическая геометрия</button>
-        <button id="button2" className={clsx(styles.theme, button2)} onClick={() => handleButtonClick("button2")}>Введение в математический анализ</button>
-        <button id="button3" className={clsx(styles.theme, button3)} onClick={() => handleButtonClick("button3")}>Дифференциальное исчисление функции одной переменной</button>
-        <button id="button4" className={clsx(styles.theme, button4)} onClick={() => handleButtonClick("button4")}>Дифференциальное исчисление функции нескольких переменных</button>
+        <Link to="/.."><img src={ImgLogo} alt='логотип' className={styles.logo} width="225" height="29"></img></Link>
+        <button
+            id="button1"
+            className={clsx(styles.theme, button1)}
+            onClick={() => handleButtonClick("button1")}
+        >
+            Элементы линейной алгебры и аналитическая геометрия
+        </button>
+        <button
+            id="button2"
+            disabled
+            className={clsx(styles.theme, button2)}
+            onClick={() => handleButtonClick("button2")}
+        >
+            Введение в математический анализ
+        </button>
+        <button
+            id="button3"
+            disabled
+            className={clsx(styles.theme, button3)}
+            onClick={() => handleButtonClick("button3")}
+        >
+            Дифференциальное исчисление функции одной переменной
+        </button>
+        <button
+            id="button4"
+            disabled
+            className={clsx(styles.theme, button4)}
+            onClick={() => handleButtonClick("button4")}
+        >
+            Дифференциальное исчисление функции нескольких переменных
+        </button>
     </div>
         <div className={styles.centerDiv}>
             {check.themes.map((theme, idx) => (
@@ -179,10 +207,10 @@ function LeftDiv() {
                         size="big"
                         title="Начать генерацию"
                         shadow=''
-                        click = {() => handleButtonGeneratingClick()}
+                        click={() => handleButtonGeneratingClick()}
                     />
                 </div>
-                <Link to='viewing' className={generating ? '' : styles.hidden}>
+                <Link to='viewing' className={generating ? '' : styles.hidden} state={dataTasks}>
                     <Button
                         color="orange"
                         size="big"

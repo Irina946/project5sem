@@ -12,10 +12,10 @@
 
 .outside {
     display: flex;
-    padding-top: 300px;
+    padding-top: 35vh;
     margin-left: 100px;
-    margin-right: 40px;
-    width: 503px;
+    /* margin-right: 40px; */
+    width: 85%;
     flex-direction: column;
     align-items: left;
 }
@@ -31,7 +31,7 @@
 
 .text {
     margin-bottom: 75px;
-    width: 606px;
+    /* width: 606px; */
     font-family: "Monsterrat";
     font-size: 16px;
     font-weight: 400;

@@ -73,7 +73,7 @@
             "selectedComplexity": 0
         },
         {
-            "title": "Системы линейниых уравнений",
+            "title": "Системы линейных уравнений",
             "complexity": [
                 {
                     "easy": "0",
@@ -152,48 +152,6 @@
                 }
             ],
             "english_name": "line_in_plane", 
-            "isVisible": false,
-            "count": 1,
-            "selectedComplexity": 0
-        },
-        {
-            "title": "Прямая и плоскость в пространстве",
-            "complexity": [
-                {
-                    "easy": "0",
-                    "medium": "0",
-                    "hard": "0"
-                }
-            ],
-            "english_name": "line_plane_space", 
-            "isVisible": false,
-            "count": 1,
-            "selectedComplexity": 0
-        },
-        {
-            "title": "Кривые второго порядка",
-            "complexity": [
-                {
-                    "easy": "0",
-                    "medium": "0",
-                    "hard": "0"
-                }
-            ],
-            "english_name": "conic_section", 
-            "isVisible": false,
-            "count": 1,
-            "selectedComplexity": 0
-        },
-        {
-            "title": "Поверхности второго порядка",
-            "complexity": [
-                {
-                    "easy": "0",
-                    "medium": "0",
-                    "hard": "0"
-                }
-            ],
-            "english_name": "second_surface", 
             "isVisible": false,
             "count": 1,
             "selectedComplexity": 0
