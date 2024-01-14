@@ -11,8 +11,10 @@
                     "hard": "5"
                 }
             ],
-            "english_name": "partial_derivative", 
-            "isVisible": false
+            "english_name": "partial_derivative",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Дифференцирование функций нескольких переменных",
@@ -23,8 +25,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "differential_vars", 
-            "isVisible": false
+            "english_name": "differential_vars",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Экстремум функции нескольких переменных: локальный, глобальный, условный экстремум",
@@ -35,8 +39,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "extremum_vars", 
-            "isVisible": false
+            "english_name": "extremum_vars",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Касательная плоскость и нормаль к поверхности",
@@ -47,8 +53,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "tangent", 
-            "isVisible": false
+            "english_name": "tangent",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Производная по направлению",
@@ -59,8 +67,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "directional_derivative", 
-            "isVisible": false
+            "english_name": "directional_derivative",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Градиент",
@@ -71,8 +81,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "gradient", 
-            "isVisible": false
+            "english_name": "gradient",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         }
     ]
 }

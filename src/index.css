@@ -47,3 +47,16 @@ code {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Monsterrat";
+  src: local("Monsterrat-Regular"), url(../fonts/Montserrat-Regular.woff2) format("woff2"),
+    url(../fonts/Montserrat-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+p {
+  margin: 0;
+}

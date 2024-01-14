@@ -12,7 +12,9 @@
                 }
             ],
             "english_name": "matrix", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Определители",
@@ -24,7 +26,9 @@
                 }
             ],
             "english_name": "determinant", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Обратная матрица",
@@ -36,7 +40,9 @@
                 }
             ],
             "english_name": "inbertible_matrix", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Ранг",
@@ -48,7 +54,9 @@
                 }
             ],
             "english_name": "rank", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Матричные уравнения",
@@ -60,10 +68,12 @@
                 }
             ],
             "english_name": "matrix_equation", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
-            "title": "Системы линейниых уравнений",
+            "title": "Системы линейных уравнений",
             "complexity": [
                 {
                     "easy": "0",
@@ -72,7 +82,9 @@
                 }
             ],
             "english_name": "linear_equation_system", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Метод матричного исчисления",
@@ -84,7 +96,9 @@
                 }
             ],
             "english_name": "matrix_method", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Формулы Крамера",
@@ -96,7 +110,9 @@
                 }
             ],
             "english_name": "cramer", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Метод Гаусса",
@@ -108,7 +124,9 @@
                 }
             ],
             "english_name": "gaussian", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Скалярное, векторное, смешанное произведение векторов",
@@ -120,7 +138,9 @@
                 }
             ],
             "english_name": "vector_multiplication", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Прямая на плоскости",
@@ -132,43 +152,9 @@
                 }
             ],
             "english_name": "line_in_plane", 
-            "isVisible": false
-        },
-        {
-            "title": "Прямая и плоскость в пространстве",
-            "complexity": [
-                {
-                    "easy": "0",
-                    "medium": "0",
-                    "hard": "0"
-                }
-            ],
-            "english_name": "line_plane_space", 
-            "isVisible": false
-        },
-        {
-            "title": "Кривые второго порядка",
-            "complexity": [
-                {
-                    "easy": "0",
-                    "medium": "0",
-                    "hard": "0"
-                }
-            ],
-            "english_name": "conic_section", 
-            "isVisible": false
-        },
-        {
-            "title": "Поверхности второго порядка",
-            "complexity": [
-                {
-                    "easy": "0",
-                    "medium": "0",
-                    "hard": "0"
-                }
-            ],
-            "english_name": "second_surface", 
-            "isVisible": false
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         }
     ]
 }

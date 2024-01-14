@@ -1,6 +1,6 @@
 .myButton {
-    width: 124px;
-    height: 40px;
+    width: max-content;
+    height: max-content;
     border-radius: 4px;
     padding: 10px 26px;
     border: none;
@@ -16,8 +16,8 @@
 
 /* size big */
 .big {
-    width: 220px;
-    height: 40px;
+    width: max-content;
+    height: max-content;
     padding: 14px 30px;
     border-radius: 3px;
     font-family: 'Monsterrat';
@@ -26,6 +26,7 @@
     line-height: normal;
 }
 
+
 /* empty */
 
 .empty {
@@ -33,16 +34,6 @@
     color: #000000;
     transition: color .5s ease-out, border .5s ease-out, background-color 1s ease-out;
     border: 1px solid #000000;
-}
-
-.empty:disabled {
-    border-color: #A9B3D5;
-    color: #A9B3D5;
-}
-
-.empty:hover {
-    color: #FFFFFF;
-    border: none;
 }
 
 .empty:focus {
@@ -55,22 +46,26 @@
     border: none;
 }
 
+
+
 .myButton:disabled {
     background-color: #A9B3D5;
     border: none;
+    color: #FFFFFF;
+    cursor: not-allowed;
 }
 
-.myButton:hover {
+.myButton:enabled:hover {
     background-color: #283872;
     border: none;
 }
 
-.myButton:focus {
+.myButton:enabled:focus {
     background-color: #14245E;
     border: none;
 }
 
-.myButton:active {
+.myButton:enabled:active {
     background-color: #14245E;
     border: none;
 }
@@ -85,15 +80,15 @@
     background-color: #E87403;
 }
 
-.orange:hover {
+.orange:enabled:hover {
     background-color: #FFB746;
 }
 
-.orange:focus {
+.orange:enabled:focus {
     background-color: #E87403;
 }
 
-.orange:active {
+.orange:enabled:active {
     background-color: #E87403;
 }
 
@@ -102,9 +97,10 @@
     background-color: #14245E;
     color: #FFFFFF;
     background-image: url(../../img/arrow-right.svg);
-    background-position: 84% 61%;
+    background-position: 84% 52%;
     background-repeat: no-repeat;
     transition: box-shadow .2s ease-out, background-position .3s ease-out;
+    padding-right: 50px;
 }
 
 .shadow:disabled {
@@ -117,7 +113,7 @@
     background-color: #283872;
     border: none;
     box-shadow: 10px 10px #0c163a;
-    background-position: 90% 61%;
+    background-position: 90% 52%;
 }
 
 .shadow:focus {
@@ -133,6 +129,7 @@
     box-shadow: 10px 10px #000000;
     background-position: 90% 61%;
 }
+
 
 .active {
     background-color: #14245E;

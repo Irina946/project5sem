@@ -11,8 +11,10 @@
                     "hard": "5"
                 }
             ],
-            "english_name": "complex_numbers", 
-            "isVisible": false
+            "english_name": "complex_numbers",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Понятие функции",
@@ -23,8 +25,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "function", 
-            "isVisible": false
+            "english_name": "function",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Основные свойства функции",
@@ -35,8 +39,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "function_propetries", 
-            "isVisible": false
+            "english_name": "function_propetries",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Предел последовательности",
@@ -47,8 +53,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "sequence_limit", 
-            "isVisible": false
+            "english_name": "sequence_limit",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Предел функции",
@@ -59,8 +67,10 @@
                     "hard": "1"
                 }
             ],
-            "english_name": "function_limit", 
-            "isVisible": false
+            "english_name": "function_limit",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         },
         {
             "title": "Непрерывность функции",
@@ -71,8 +81,10 @@
                     "hard": "0"
                 }
             ],
-            "english_name": "сontinuous_function", 
-            "isVisible": false
+            "english_name": "сontinuous_function",
+            "isVisible": false,
+            "count": 1,
+            "selectedComplexity": 0
         }
     ]
 }

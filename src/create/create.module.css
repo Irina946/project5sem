@@ -8,7 +8,7 @@
 }
 
 .leftDiv {
-    width: 510px;
+    width: 340px;
     background-color: #14245E;
     color: #FFFFFF;
     padding-top: 50px;
@@ -33,6 +33,15 @@
     cursor: pointer;
 }
 
+.theme:disabled {
+    cursor: not-allowed;
+}
+
+.theme:disabled:hover {
+    cursor: not-allowed;
+    background-color: #14245E;
+}
+
 .theme:hover {
     background-color: #283872;
 }
@@ -47,7 +56,7 @@
 .centerDiv {
     background-color: #283872;
     padding-top: 50px;
-    width: 440px;
+    width: 293px;
     font-size: 16px;
 }
 
@@ -135,12 +144,20 @@ label {
 }
 
 .rightDiv {
-    width: 727px;
-    padding: 65px 0 50px 150px;
-    margin-right: -120px;
+    min-height: 780px;
+    width: 50%;
+    padding: 65px 0 50px 126px;
+}
+
+.hidden {
+    display: none;
 }
 
 .oneTheme {
+    background-image: url('../img/Frame.png');
+    background-repeat: no-repeat;
+    background-position: 0px -2px;
+    padding-left: 54px;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
@@ -180,7 +197,12 @@ input::-webkit-inner-spin-button {
 }
 
 .buttonContainer {
-    padding-right: 127px;
-    padding-bottom: 63px;
-    align-self: flex-end;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: calc(55% + 15px);
+    float: right;
+    margin-top: auto;
+    margin-right: 85px;
+    top: 1%
 }
